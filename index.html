@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UBI Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery.3.4.1.js"></script>
+    <script src="script.js"></script>
+</head>
+<body onload="initPage()">
+    <div id="title-element">
+        
+        <!-- Balance meter -->
+        <div id="balance-meter">
+            <span class="title">BALANCE<br></span>
+
+            <div id="balance">
+                <span class="dollar-sign">$</span>
+                <span class="dollar-amount" id="balanceAmount"></span>
+                </div>
+        </div>
+
+        <!-- Job Strikes -->
+        <div class="job-strikes">
+            <span class="title">JOB STRIKES<br></span>
+            <span class="strikes" id="strike-1">X</span>
+            <span class="strikes" id="strike-2">X</span>
+            <span class="strikes" id="strike-3">X</span>
+        </div>
+
+        <!-- Days until Payday-->
+        <div class="days-until-payday">
+            <span id="payday-title">PAYDAY IN<br></span>
+            <span id="days-left">14</span>
+            <span id="days-left-text">Day(s)</span>
+        </div>
+    </div>
+    
+    <!-- Timeline -->
+    <div id="timeline">
+        <span id="container" id="timeline-circle"></span>
+        <div id="date-meter">
+            <span id="timelineMonth">Jan<br></span>
+            <span id="timelineDay">1</span>
+        </div>
+    </div>
+
+    <div class="months">
+        <span id="month_1">JAN</span>
+        <span id="month_2">FEB</span>
+        <span id="month_3">MAR</span>
+        <span id="month_4">APR</span>
+        <span id="month_5">MAY</span>
+        <span id="month_6">JUN</span>
+    </div>
+
+    <div id="payday-text">
+        <p>
+            Payday!
+        </p>
+    </div>
+
+    <div id="intro">
+        <p id="intro-text-1">
+            You just got evicted from your apartment. To make matters even worse, <br>
+            the company you worked for downsized and you got laid off. <br><br>
+        </p>
+        <p id="intro-text-2">
+            For now you can live out of your car. Luckily, the resturant down the street is hiring.<br>
+            You interview and get the job.<br><br> 
+            <p id="pay-text">The pay is ok, $5.50/hr + tips.</p>
+        </p>
+            <button type="button" id="continue-button">CONTINUE</button>
+    </div>
+    <div id="money">
+        <h2 id="gross-pay">$507 | Pay before taxes</h2>
+        <h2 id="taxes">(-$69) | Taxes</h2>
+        <h2 id="tips">$350 | Tips (on average)</h2>
+        <h2 id="bi-weekly-pay-text">Bi-weekly take home pay</h2>
+        <h2 id="bi-weekly-pay">$798</h2>
+        <button type="button" id="continue-button-pay">CONTINUE</button>
+    </div>
+
+    <div id="content" style="text-align: center; margin-top: 100px; width: 90%;">
+test
+    </div>
+
+    <div id="jobstrike-text">
+        <p>
+            Job Strike!
+        </p>
+    </div>
+
+    <div id="gameover-messages">
+
+        <div id="loseNormal">
+            <h1>YOU LOSE</h1>
+            <button type="button" class="button-style" id="startover" onClick="playAgain('loseNormal')">Play again with UBI?</button>
+        </div>
+
+        <div id="winNormal">
+            <h1>CONGRATULATIONS! <br> You made it 5 months!</h1>
+            <button type="button" class="button-style" id="win-button" onClick="playAgain('winNormal')">Play again with UBI?</button>
+        </div>
+
+        <div id="loseUBI">
+            <h1>YOU LOSE</h1>
+            <h3>Refresh the page to start over</h3>
+        </div>
+    
+        <div id="winUBI">
+            <h1>CONGRATULATIONS! <br> You made it 5 months! It was easier with a UBI wasn't it.</h1>
+            <h3>Refresh the page to start over</h3>
+        </div>
+    </div>
+
+    <div id="bills">
+        <table id="bills-table">
+            <tr>
+                <td style="font-weight: bold;">Monthly Bills</td>
+                <td style="text-align:right; font-weight: bold;">Amount</td>
+            </tr>
+            <tr>
+                <td>Rent</td>
+                <td id="rentAmount" style="text-align:right">$1000</td>
+            </tr>
+            <tr>
+                <td>Electric</td>
+                <td style="text-align:right">$75</td>
+            </tr>
+            <tr>
+                <td>Gas</td>
+                <td style="text-align:right">$35</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td style="text-align:right">$100</td>
+            </tr>
+            <tr id="internet" style="display: none;">
+                <td>Internet</td>
+                <td id="internetAmount" style="text-align: right;">$50</td>
+            </tr>
+            <tr id="UBITable" style="display: none;">
+                <td>UBI Monthly Income</td>
+                <td id="UBIAmount" style="text-align: right;">+ $1000</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center; font-size: 125%;">
+                    <button type="button" class="button-style" id="bills-button" onClick="hideBills()">CONTINUE</button>
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+
+    <div id="footer">Universal Basic Income Simulator</div>
+
+</body>
+</html>

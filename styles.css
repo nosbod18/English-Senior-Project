@@ -1,0 +1,237 @@
+body {
+    background-color: #24282e;
+    color: #ebebeb;
+    font-family: "Montserrat", sans-serif;
+    font-size: 150%;
+    min-width: 700px;
+}
+
+#title-element {
+    display: grid;
+    grid-template-columns: 20% 15% 15%;
+    column-gap: 10%;
+
+}
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+    height: 20px;
+    width: 90%;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+#balance-meter .title {
+    font-size:  75%;
+    margin-left: 25%;
+    padding-left: 2%;
+    padding-right: 45%;
+    padding-bottom: 1%;
+    border-bottom: 1px dotted #ebebeb;
+}
+
+#balance {
+    font-size: 200%;
+    margin-left: 27%;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+
+#balance .dollar-sign {
+    color: #24ffb6;
+}
+
+.job-strikes .title {
+    font-size: 75%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+    padding-right: 35%;
+    border-bottom: 1px dotted #ebebeb;
+}
+
+#strike-1 {
+    font-size: 220%;
+    padding-top: 3%;
+    padding-left: 10%;
+    opacity: 0.3;
+    color: #24ffb6;
+}
+
+#strike-2 {
+    font-size: 220%;
+    padding-top: 3%;
+    padding-left: 10%;
+    opacity: 0.3;
+    color: #24ffb6;
+}
+
+#strike-3 {
+    font-size: 220%;
+    padding-top: 3%;
+    padding-left: 10%;
+    opacity: 0.3;
+    color: #24ffb6;
+}
+
+#heading-definition {
+    font-size: 12px;
+    padding-left: 70px;
+}
+
+#payday-title {
+    font-size: 75%;
+    padding-left: 3%;
+    padding-right: 35%;
+    padding-bottom: 1%;
+    border-bottom: 1px dotted #ebebeb;
+}
+
+#days-left {
+    font-size: 200%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#days-left-text {
+    font-size: 150%;
+}
+
+/* Circle on timeline */
+#container {
+    content: '';
+    position: absolute;
+    width: 1%;
+    height: 2%;
+    right: 5.40%;
+    background-color: #24282e;
+    border: 3px solid #24ffb6;
+    top: 3%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#timelineMonth {
+    position: absolute;
+    display: block;
+    border-bottom: 1px dotted #ebebeb;
+    font-size: 85%;
+    top: 1%;
+    right: 7%;
+    padding-left: 5%;
+    padding-right: 0.25%;
+    padding-bottom: 0.25%;
+}
+
+#timelineDay {
+    position: absolute;
+    display: inline-block;
+    font-size: 175%;
+    top: 4%;
+    right: 7%;
+    padding-right: 0.75%;
+}
+
+.months {
+    position: absolute;
+    display: grid;
+    grid-auto-rows: 75%;
+    right: 1%;
+    margin-top: -8%;
+    border-left: 5px solid #ebebeb;
+    padding-left: 1%;
+    padding-top: 2%;
+    padding-bottom: 40%;
+}
+
+.button-style {
+    border-radius: 5px;
+    padding: 0.5%;
+    margin: 1%;
+    background-color: #ebebeb;
+}
+.button-style:hover {
+    cursor: pointer;
+}
+
+#intro {
+    color: #ebebeb;
+    text-align: center;
+    margin-right: 10%;
+    margin-top: 7%;
+}
+
+#pay-text {
+    display: none;
+    text-align: center;
+}
+
+#continue-button {
+    display: none;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 125%;
+    border-radius: 10px;
+}
+
+#continue-button:hover {
+    cursor: pointer;
+}
+
+#continue-button-pay {
+    display: none;
+    margin-top: 5%;
+    font-size: 125%;
+    border-radius: 10px;
+}
+
+#continue-button-pay:hover {
+    cursor: pointer;
+}
+
+#money {
+    text-align: center;
+    margin-right: 10%;
+    margin-top: 7%;
+}
+
+#gross-pay, #tips {
+    color: #18942a;
+}
+
+#taxes {
+    color: #a83232;
+}
+
+#bi-weekly-pay,  #bi-weekly-pay-text{
+    font-size: 150%;
+}
+
+#payday-text, #jobstrike-text{
+    text-align: center;
+    margin-right: 10%;
+    margin-top: 15%;
+    font-size: 125%;
+}
+
+#gameover-messages {
+    text-align: center;
+    margin-top: 7%;
+    margin-right: 10%;
+}
+
+#startover, #win-button {
+    margin-top: 5%;
+}
+
+#bills {
+    margin-right: 10%;
+    margin-top: 50px
+}
+
+#bills-table {
+    margin: auto;
+    width: 400px;
+}
